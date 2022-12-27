@@ -138,7 +138,6 @@ let description = {};
 async function fetchData() {
   if (debug) console.log("Start Fetch");
   try {
-    // let myData = await fetch("../JSON/Planet.json");
     // let myData = await fetch("../JSON/menu.json");
     let myData = await fetch(
       "https://raw.githubusercontent.com/ayoub198fillali/MaterialStore/main/JSON/menu.json"
@@ -172,7 +171,7 @@ async function fetchData() {
               ${element.Description}
             </p>
             <a href="#order" titre="${element.Name}" class="btn btnCommander">Order</a>
-            <span class="price">€${element.Prix}</span>
+            <span class="price">${element.Prix}DH</span>
           </div>
         </div >
         </div>`;
@@ -213,7 +212,7 @@ async function fetchData() {
         if (!(Number(element.Rate) === element.Rate && element.Rate % 1 === 0))
           myStrCode += `<i class="fas fa-star-half-alt"></i>`;
         myStrCode += ` </div>
-          <span class="price">€${element.Prix}</span>
+          <span class="price">${element.Prix}DH</span>
           <a href="#order" titre="${element.Name}" class="btn btnCommander">Order</a>
         </div>`;
         $("#myPlat").append(myStrCode);
@@ -261,6 +260,7 @@ async function fetchData() {
             <span>Our special offer ${element.num.trim()}</span>
             <h3>${element.Name.trim()}</h3>
             <p>${element.Description.trim()}</p>
+            <span class="priceHome">${element.price.trim()}</span>
             <a href="#order" titre="${element.Name.trim()}" class="btn btnCommander">Order</a>
           </div>
           <div class="image">
@@ -406,7 +406,7 @@ $("#ContactForm").on("submit", function (e) {
   // console.log(myCommand.join(", "));
   // https://mailtrap.io/blog/javascript-send-email/
   $.getJSON("https://api.ipify.org?format=json", function (data) {
-    emailjs.init("KAe5kfyvpRuOXbuIw"); //please encrypted user id for malicious attacks
+    emailjs.init("0_F9rR6oBtBbaBTkv"); //please encrypted user id for malicious attacks
     // https://dashboard.emailjs.com/admin/templates/tvk9clb
     let templateParams = {
       from_name: $("#formeNom").val(),
@@ -418,14 +418,14 @@ $("#ContactForm").on("submit", function (e) {
 
     // console.log(templateParams);
 
-    // emailjs.send("service_zhki1yu", "template_wxi2e5g", templateParams).then(
-    //   function () {
-    //     myNotif("success", "Message envoyé", 1000);
-    //     $("#ContactForm")[0].reset();
-    //   },
-    //   function () {
-    //     myNotif("error", "Message non envoyé...", 1000);
-    //   }
-    // );
+    emailjs.send("service_1f6c6js", "template_9o7elp4", templateParams).then(
+      function () {
+        myNotif("success", "Message envoyé", 1000);
+        $("#ContactForm")[0].reset();
+      },
+      function () {
+        myNotif("error", "Message non envoyé...", 1000);
+      }
+    );
   });
 });

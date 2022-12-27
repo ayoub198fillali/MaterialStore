@@ -1,20 +1,20 @@
 [
   {
-    "Name": "ESP32 WiFi+Bluetooth Dual Core",
+    "Name": "ESP32 WiFi + Bluetooth Dual Core",
     "Rate": 5,
-    "Description": "carte de développement ESP32 est basé sur le module ESP-WROOM-32 (ESP32) d’Espressif, un MCU 32Bit dual core 24Mhz offrant une tres grande puissance de calcul et une connectivité Wifi et Bluetooth. Cette carte est 100% compatible avec l’IDF espressif et l’IDE Arduino",
+    "Description": "ESP32 est un MCU 32Bit dual core 240Mhz offrant une tres grande puissance de calcul et une connectivité Wifi et Bluetooth. Cette carte est 100% compatible avec IDE Arduino",
     "Prix": "90.00"
   },
   {
     "Name": "BH1750 Capteur de lumière pour Arduino",
-    "Rate": 4.5,
-    "Description": "carte de développement ESP32 est basé sur le module ESP-WROOM-32 (ESP32) d’Espressif, un MCU 32Bit dual core 24Mhz offrant une tres grande puissance de calcul et une connectivité Wifi et Bluetooth. Cette carte est 100% compatible avec l’IDF espressif et l’IDE Arduino",
-    "Prix": "13.00"
+    "Rate": 5,
+    "Description": "BH1750 permettant de mesurer avec précision la luminosité ambiante. Ce module est prévu pour une utilisation avec un microcontrôleur type Arduino, Raspberry Pi ou compatible via le bus I2C.",
+    "Prix": "100.00"
   },
   {
     "Name": "OV7670 Camera Module",
-    "Rate": 4.5,
-    "Description": "OV7670 image sensor, small size, low operating voltage, and provides all the features of the single-chip VGA camera and image processor. Through theSCCB bus control, you can output the entire frame, sub-sampled, take the window way affect the data resolution of 8 bits",
+    "Rate": 5,
+    "Description": "OV7670 image sensor, small size, low operating voltage, and provides all the features of the single-chip VGA camera and image processor.",
     "Prix": "1.9"
   },
   {

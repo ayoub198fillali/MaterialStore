@@ -326,11 +326,15 @@ header .icons #menu-bars {
 }
 
 .about .row .image {
-  flex: 1 1 23rem;
+  flex: 1 1 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about .row .image img {
-  width: 100%;
+  /* width: 100%; */
+  width: 400px;
 }
 
 .about .row .content {
@@ -482,6 +486,13 @@ header .icons #menu-bars {
   position: absolute;
   margin-top: 1rem;
   right: 5px;
+}
+
+.priceHome {
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  display: block;
 }
 
 .review .slide {
@@ -711,6 +722,9 @@ header .icons #menu-bars {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .about .row .image img {
+    width: 115px;
   }
 
   .menu .box-container .box .content h3 {
