@@ -1,4 +1,5 @@
 // Config //
+let server = false;
 let debug = false;
 let POPULAR = [1, 3, 4, 6, 18];
 ////////////
@@ -138,10 +139,12 @@ let description = {};
 async function fetchData() {
   if (debug) console.log("Start Fetch");
   try {
-    // let myData = await fetch("../JSON/menu.json");
-    let myData = await fetch(
-      "https://raw.githubusercontent.com/ayoub198fillali/MaterialStore/main/JSON/menu.json"
-    );
+    let myData;
+    if (server) {
+      myData = await fetch(
+        "https://raw.githubusercontent.com/ayoub198fillali/MaterialStore/main/JSON/menu.json"
+      );
+    } else myData = await fetch("../JSON/menu.json");
 
     let jsData = await myData.json();
     let myStrCode = "";
@@ -244,10 +247,12 @@ async function fetchData() {
   } finally {
     // Get Data From Server ==================================
     try {
-      // let myData = await fetch("../JSON/PlatsSlide.json");
-      let myData = await fetch(
-        "https://raw.githubusercontent.com/ayoub198fillali/MaterialStore/main/JSON/PlatsSlide.json"
-      );
+      let myData;
+      if (server) {
+        myData = await fetch(
+          "https://raw.githubusercontent.com/ayoub198fillali/MaterialStore/main/JSON/PlatsSlide.json"
+        );
+      } else myData = await fetch("../JSON/PlatsSlide.json");
 
       let jsData = await myData.json();
       let myStrCode = "";
