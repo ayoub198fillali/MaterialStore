@@ -1,5 +1,5 @@
 // Config //
-let server = false;
+let server = true;
 let debug = false;
 let POPULAR = [1, 3, 4, 6, 18];
 ////////////
