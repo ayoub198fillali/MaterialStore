@@ -156,7 +156,7 @@ async function fetchData() {
       myStrCode = `<div class="box" id="menu-${index + 1}">
 
           <div class="image">
-            <img src="images/menu-${index + 1}.jpg" alt="">
+            <img src="images/${element.img}.jpg" alt="">
             <a id="fav-menu-${index + 1}" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -201,7 +201,7 @@ async function fetchData() {
         ii++;
         myStrCode = `<div class="box" id="plat-${index + 1}">
         <div class="shadow">
-          <img src="images/menu-${index + 1}.jpg" alt="" />
+          <img src="images/${element.img}.jpg" alt="" />
         </div>
         <a id="fav-plat-${index + 1}" class="fas fa-heart"></a>
         <a id="eye-plat-${index + 1}" class="fas fa-eye"></a>
