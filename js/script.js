@@ -1,7 +1,7 @@
 // Config //
 let server = true;
 let debug = false;
-let POPULAR = [1, 3, 4, 6, 18];
+let POPULAR = [1, 3, 9, 14, 15];
 ////////////
 let swiper;
 let menu = document.querySelector("#menu-bars");

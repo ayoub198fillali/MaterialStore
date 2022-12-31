@@ -109,7 +109,7 @@
   },
 
   {
-    "Name": "LCD 1602 – Module d'affichage HD44780, écran 16x 2",
+    "Name": "LCD 1602, écran 16x 2",
     "Rate": 5,
     "Description": "c'est connectable à Arduino ou à toute autre carte microcontrôlée. Grâce à son interface pour bus I2C (TWI), il n’utilise que deux broches sur la carte Arduino.",
     "Prix": "45.00",
